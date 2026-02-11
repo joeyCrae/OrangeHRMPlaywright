@@ -1,0 +1,28 @@
+{
+  "name": "orangehrmplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyCrae/OrangeHRMPlaywright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joeyCrae/OrangeHRMPlaywright/issues"
+  },
+  "homepage": "https://github.com/joeyCrae/OrangeHRMPlaywright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.3.0"
+  }
+}

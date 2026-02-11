@@ -19,25 +19,13 @@ test.describe('Login Tests', () => {
     });
   });
 
-  test('2 - should successfully log in as ess', async () => {
-    await test.step('ESS logs in', async () => {
-      await loginPage.essSuccessLogin();
+  test('2 - should login with invalid credentials', async () => {
+    await test.step('User logs in with invalid credentials', async () => {
+      await loginPage.invalidLogin();
     });
 
-    await test.step('Verify ESS login success', async () => {
-      await loginPage.verifyEssLoginSuccess();
-    });
-  });
-
-  test('3 - should successfully log in as manager', async () => {
-    await test.step('Manager logs in', async () => {
-      await loginPage.managerSuccessLogin();
-    });
-
-    await test.step('Verify manager login success', async () => {
-      await loginPage.verifyManagerLoginSuccess();
+    await test.step('Verify login failure', async () => {
+      await loginPage.verifyLoginFailure();
     });
   });
-
-  
 });

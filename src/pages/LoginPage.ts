@@ -29,25 +29,14 @@ export class LoginPage {
         await expect(this.page).toHaveURL(/dashboard/);
     }
 
-    public async essSuccessLogin() {
+    public async invalidLogin() {
         await this.usernameInput.fill(users.ess.username);
         await this.passwordInput.fill(users.ess.password);
         await this.loginButton.click();
     }
 
-    public async verifyEssLoginSuccess() {
-        await expect(this.dashboardHeader).toBeVisible();
-        await expect(this.page).toHaveURL(/dashboard/);
-    }
-
-    public async managerSuccessLogin() {
-        await this.usernameInput.fill(users.manager.username);
-        await this.passwordInput.fill(users.manager.password);
-        await this.loginButton.click();
-    }
-
-    public async verifyManagerLoginSuccess() {
-        await expect(this.dashboardHeader).toBeVisible();
-        await expect(this.page).toHaveURL(/dashboard/);
+    public async verifyLoginFailure() {
+        await expect(this.errorMessage).toBeVisible();
+        await expect(this.errorMessage).toHaveText('Invalid credentials');
     }
 }

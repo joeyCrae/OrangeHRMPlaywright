@@ -11,18 +11,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/joeyCrae/OrangeHRMPlaywright/issues"
   },
   "homepage": "https://github.com/joeyCrae/OrangeHRMPlaywright#readme",
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.2.3",
-    "allure-commandline": "^2.36.0",
-    "allure-playwright": "^3.4.5"
+    "@playwright/test": "1.58.2",
+    "@types/node": "25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "allure-commandline": "2.36.0",
+    "allure-playwright": "3.4.5",
+    "eslint": "^9.39.2",
+    "eslint-plugin-playwright": "2.5.1"
   },
   "dependencies": {
-    "@faker-js/faker": "^10.3.0"
+    "@faker-js/faker": "10.3.0"
   }
 }
